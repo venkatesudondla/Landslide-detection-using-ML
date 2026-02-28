@@ -44,48 +44,86 @@ The core objective of this project is **early risk prediction and disaster preve
 
 ---
 
-## ⚙️ Installation
+## ⚡ Quick Start Guide
 
-To run the project locally, follow these steps:
+Follow these steps to quickly set up and run the Landslide Detection Using Machine Learning project:
 
-### 1️⃣ Clone the repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/venkatesudondla/landslide-detection-ml.git
-```
-
-### 2️⃣ Navigate into the project directory
-
-```bash
 cd landslide-detection-ml
 ```
 
-### 3️⃣ Install dependencies
+### 2️⃣ Create Virtual Environment (Recommended)
+
+```bash
+python -m venv venv
+```
+
+Activate the environment:
+
+- **Windows**
+```bash
+venv\Scripts\activate
+```
+
+- **Mac/Linux**
+```bash
+source venv/bin/activate
+```
+
+### 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
+### 4️⃣ Prepare Dataset
 
-## ▶️ Usage
+- Place the InSAR-based dataset file inside the `data/` folder  
+- Ensure the file name matches the one used in `train_model.py`
 
-### 🔹 Train the Machine Learning Model
+Example:
+
+```
+data/insar_landslide_dataset.csv
+```
+
+### 5️⃣ Train the Model
 
 ```bash
 python models/train_model.py
 ```
 
-### 🔹 Run Prediction
+This will:
+- Preprocess the dataset  
+- Train the ML model  
+- Save the trained model as `saved_model.pkl`
+
+### 6️⃣ Run Prediction
 
 ```bash
 python models/predict.py
 ```
 
-### 🔹 Run the Application (if dashboard included)
+### 7️⃣ (Optional) Run Web Application
+
+If a dashboard is included:
 
 ```bash
 python app.py
+```
+
+Then open your browser:
+
+```
+http://localhost:5000
+```
+
+---
+
+You are now ready to test and evaluate the Landslide Detection ML system 🚀
 ```
 
 ---
