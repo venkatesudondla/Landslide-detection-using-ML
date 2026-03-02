@@ -17,7 +17,6 @@ The core objective of this project is **early risk prediction and disaster preve
 - [Model Evaluation](#model-evaluation)  
 - [Project Structure](#project-structure)  
 - [Future Enhancements](#future-enhancements)  
-- [Author](#author)  
 
 ---
 
